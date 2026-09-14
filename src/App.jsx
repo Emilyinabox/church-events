@@ -1,122 +1,43 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import React from 'react';
+import eventData from './event_data.json'; // Importing your "dataset"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function EventDashboard() {
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="max-w-6xl mx-auto p-6 font-sans">
+      <header className="text-center my-12">
+        <h1 className="text-4xl font-extrabold text-orange-600">Church Halloween Celebration</h1>
+        <p className="text-gray-600 mt-2">Join the fun and find out how you can serve our community!</p>
+      </header>
 
-      <div className="ticks"></div>
+      {/* Grid Layout Container */}
+      <div className="grid md:grid-cols-2 gap-6">
+        {eventData.map((activity) => (
+          <div key={activity.id} className="border rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">{activity.title}</h2>
+              <p className="text-gray-600 text-sm mb-4">{activity.description}</p>
+              
+              <ul className="mb-6 space-y-1">
+                {activity.details.map((detail, index) => (
+                  <li key={index} className="text-xs text-gray-500 bg-gray-100 inline-block px-2 py-1 rounded mr-2">
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+            {/* Link to Church Center */}
+            <a 
+              href={activity.church_center_url}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition"
+            >
+              Sign Up to Volunteer
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
-
-export default App
