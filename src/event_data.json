@@ -3,28 +3,35 @@
     "id": "costume_exchange",
     "title": "🎃 Costume Exchange",
     "description": "Drop off gently used costumes from previous years, and pick up a new-to-you favorite completely for free!",
-    "details": ["Drop-off: Oct 15-20", "Pick-up: Event Day"],
+    "details": ["Drop-off: Sundays or Monday evenings, Oct 4-12", "Help Needed sorting and disbursing"],
     "church_center_url": "https://churchcenter.com"
   },
   {
-    "id": "photo_ops",
-    "title": "📸 Theme Photo Ops",
-    "description": "Professional-grade backdrop rooms staged for the perfect family photo. Bring your own phone or camera!",
-    "details": ["3 staging areas", "Volunteer photographers available"],
+    "id": "costume_crafting",
+    "title": "🎃 Costume DIY",
+    "description": "Combine your new-to-you costume with your own custom accessories",
+    "details": ["Unleash your creativity to make masks, headbands, capes, accessories, etc", "Help needed at the event to help others with gluing, sewing, cutting, designing"],
     "church_center_url": "https://churchcenter.com"
   },
   {
     "id": "scavenger_hunt",
     "title": "🕵️‍♂️ Scavenger Hunt",
-    "description": "Navigate through 3 to 4 fully immersive themed rooms to solve riddles, collect clues, and win treats.",
-    "details": ["Rooms: Spooky Forest, Mad Lab, Candy Castle", "Ages 4-12"],
+    "description": "Navigate through 3 to 4 themed rooms to solve riddles, collect clues, and win treats.",
+    "details": ["Rooms: Carnival, Mad Lab, Spooky Forest", "Ages 4-12", "Help Needed for character roles and decorating"],
     "church_center_url": "https://churchcenter.com"
   },
   {
     "id": "dance_along",
     "title": "💃 Just Dance Dance-Along",
     "description": "Follow the moves on the big screen! High-energy dance tracking for kids and parents alike.",
-    "details": ["Top of every hour", "Prizes for best energy"],
+    "details": ["Show off your moves", "Prizes for best energy", "Sign-up to lead a dance"],
+    "church_center_url": "https://churchcenter.com"
+  },
+  {
+    "id": "photo_ops",
+    "title": "📸 Photo Ops",
+    "description": "Professional-grade backdrop rooms staged for the perfect family photo. Bring your own phone or camera!",
+    "details": ["Self-Service", "Help needed for set-up and clean-up"],
     "church_center_url": "https://churchcenter.com"
   }
 ]
