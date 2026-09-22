@@ -3,35 +3,42 @@
     "id": "costume_exchange",
     "title": "🎃 Costume Exchange",
     "description": "Drop off gently used costumes from previous years, and pick up a new-to-you favorite completely for free!",
-    "details": ["Drop-off: Sundays or Monday evenings, Oct 4-12", "Help Needed sorting and disbursing"],
+    "details": ["Drop-off: Sundays or Monday evenings, Oct 4-12", "Help Needed sorting and disbursing costumes at the event from 6-7pm"],
     "church_center_url": "https://churchcenter.com"
   },
   {
     "id": "costume_crafting",
     "title": "🎃 Costume DIY",
     "description": "Combine your new-to-you costume with your own custom accessories",
-    "details": ["Unleash your creativity to make masks, headbands, capes, accessories, etc", "Help needed at the event to help others with gluing, sewing, cutting, designing"],
+    "details": ["Unleash your creativity to make masks, headbands, capes, accessories, etc", "Help needed at the event to help others with gluing, sewing, cutting, designing at the event from 6:30-7:30"],
     "church_center_url": "https://churchcenter.com"
   },
   {
     "id": "scavenger_hunt",
     "title": "🕵️‍♂️ Scavenger Hunt",
     "description": "Navigate through 3 to 4 themed rooms to solve riddles, collect clues, and win treats.",
-    "details": ["Rooms: Carnival, Mad Lab, Spooky Forest", "Ages 4-12", "Help Needed for character roles and decorating"],
+    "details": ["Areas: Carnival, Mad Lab, Spooky Forest", "Help Needed for character roles and decorating","Mad Scientist: Kids will look for clues in the scientist's messy lab","Fortune Teller: Tell participant's fortunes from a crystal ball", "Witch: Give participants a potion to try from her brew (pickle juice or something sweet) in order to earn a clue"],
     "church_center_url": "https://churchcenter.com"
   },
+  {
+    "id": "games",
+    "title": "Carnival Games",
+    "description": "Halloween themed games",
+    "details": ["Design a Game to bring and supervise at the event from 6:30-7:30", "Ideas: Ball Toss into Monster's mouth (cornhole with decorations), Broom racing, Ring Toss, Pick the Witch's Nose, Pin the Spider on the Web, Human whackamole, etc"],
+    "church_center_url":"https://churchcenter.com"
+  }
   {
     "id": "dance_along",
     "title": "💃 Just Dance Dance-Along",
     "description": "Follow the moves on the big screen! High-energy dance tracking for kids and parents alike.",
-    "details": ["Show off your moves", "Prizes for best energy", "Sign-up to lead a dance"],
+    "details": ["Show off your moves", "Prizes for best energy", "Sign-up to lead a dance; please provide youtube link to song you want to lead; dancing starts at 7:30"],
     "church_center_url": "https://churchcenter.com"
   },
   {
     "id": "photo_ops",
     "title": "📸 Photo Ops",
-    "description": "Professional-grade backdrop rooms staged for the perfect family photo. Bring your own phone or camera!",
-    "details": ["Self-Service", "Help needed for set-up and clean-up"],
+    "description": "Photo opportunity for the perfect family photo. Bring your own phone or camera!",
+    "details": ["Self-Service", "Help needed for set-up and clean-up photo backdrop, lights, and tripod"],
     "church_center_url": "https://churchcenter.com"
   }
 ]
