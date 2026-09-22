@@ -77,13 +77,13 @@ export default function EventDashboard() {
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">{activity.title}</h2>
                 <p className="text-gray-600 text-sm mb-4">{activity.description}</p>
                 
-                <ul className="mb-6 space-y-1">
+                <div className="mb-6 flex flex-wrap gap-2">
                   {activity.details.map((detail, index) => (
-                    <li key={index} className="text-xs text-gray-500 bg-gray-100 inline-block px-2 py-1 rounded mr-2">
-                      {detail}
-                    </li>
+                  <span key={index} className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                    {detail}
+                  </span>
                   ))}
-                </ul>
+                </div>
 
                 {/* Inline Volunteer Form */}
                 <form 
@@ -143,14 +143,14 @@ export default function EventDashboard() {
               </div>
 
               {/* Link to Church Center */}
-              <a 
+              {/* <a 
                 href={activity.church_center_url}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition mt-4"
               >
                 Sign Up to Volunteer
-              </a>
+              </a> */}
             </div>
           );
         })}
