@@ -90,8 +90,9 @@ export default function EventDashboard() {
                   onSubmit={(e) => handleSubmit(e, activity.id, activity.title)} 
                   className="space-y-3 my-6 p-4 bg-orange-50/50 rounded-lg border border-orange-100"
                 >
-                  <h3 className="font-semibold text-gray-700 text-sm">Quick RSVP / Ask a Question:</h3>
-                  
+                  <h3 className="font-semibold text-gray-700 text-sm">Sign-Up:</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end"> {/* Parent wrapper added */}
+  
                   <div>
                     <label className="block text-xs font-medium text-gray-600 mb-1" htmlFor={`name-${activity.id}`}>Name</label>
                     <input 
@@ -126,7 +127,7 @@ export default function EventDashboard() {
                       required
                     ></textarea>
                   </div>
-
+                  </div>
                   <button 
                     type="submit" 
                     className="w-full bg-gray-800 text-white hover:bg-gray-900 transition text-xs font-bold py-2 rounded-md"
